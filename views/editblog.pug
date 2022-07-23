@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content
+    div.formContent 
+        h1=`Editing Article ${wantedBlog.id}`
+        form(action=`/article/updatedblog${wantedBlog.id}`, method='POST' class="forms")
+            label Title:
+            input(type='text', name='title' placeholder="Title" value=wantedBlog.title )
+            label First Name:
+            input(type='text', name='authorfirstname' value=wantedBlog.authorfirstname)
+            label Last Name:
+            input(type='text', name='authorlastname' value=wantedBlog.authorlastname)
+            label Email:
+            input(type='email', name='authoremail' value=wantedBlog.authoremail)
+            label Description:
+            input(type='text', name='description' value=wantedBlog.description)
+            label Blog:
+            textarea(rows='20' cols='60' name='body' placeholder="enter blog here:" class="blogInput")
+                |  #{wantedBlog.body}
+            input(type='submit', value='Submit Changes' class="inputButtons")
+

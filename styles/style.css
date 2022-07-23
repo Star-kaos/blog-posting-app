@@ -1,0 +1,230 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(228, 228, 228);
+
+}
+
+.main {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 6em;
+}
+
+.mainPageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 60%;
+    margin-top: 2em;
+    /* height: 100vh; */
+    /* overflow: scroll; */
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 40%;
+    overflow-wrap: anywhere;
+    padding: 2em;
+}
+
+
+.navbar {
+    width: 100vw;
+    background-color: rgb(18, 80, 105);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navNest {
+    width: 60%;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.navtitle {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cinzel', serif;
+
+}
+
+.navBtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: none;
+    padding: 1.5em;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.navBtn:hover {
+    background-color: rgb(15, 64, 83);
+}
+
+.navbarBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+Input {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 2em;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    color: #3e3e3e;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    color: #3e3e3e;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+    color: #656565;
+}
+
+
+.blogInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 2em;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    color: #3e3e3e;
+}
+
+.inputButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.inputButtons {
+    width: 100%;
+    background-color: green;
+    color: white;
+    margin-right: 10px;
+}
+
+.inputViewBtn {
+    width: 20%;
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(11, 11, 99);
+    border: none;
+}
+
+.inputViewBtn:hover {
+    background-color: rgb(186, 186, 186)
+}
+
+.inputButtonsMain {
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+
+.inputButtonsDelete {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    margin-bottom: 0px;
+}
+
+.titleName {
+    color: #605f5f;
+    margin: 0px;
+}
+
+.allBlogs {
+    width: 70%;
+    overflow-wrap: anywhere;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
+    padding: 2em;
+    margin-top: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.viewBlog {
+    overflow-wrap: anywhere;
+    border: solid black 2px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewBlogs {
+    margin-top: 2em;
+}
+
+.viewTitle {
+    margin-bottom: 0px;
+}
+
+.inputViewEditBtn {
+    padding: 10px;
+    background-color: transparent;
+    color: rgb(11, 11, 99);
+    border: none;
+}
+
+.inputViewEditBtn:hover {
+    background-color: azure;
+}

@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="../style.css")
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap' rel='stylesheet') 
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+        title Bloging-app
+    body 
+        div.main
+            div.navbar
+                div.navNest
+                    div
+                        h1.navtitle Blogging site
+                    div.navbarBtns
+                        form(action=`/article/new`, method='GET')
+                            input(type='submit', value='Create', class="navBtn")
+                        form(action=`/article`, method='GET')
+                            input(type='submit', value='Home', class="navBtn")
+            block content
+
+
+

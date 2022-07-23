@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content 
+    div.formContent
+        h1 Create a blog
+        form(action='/article/new', method='POST' class="forms")
+            label Title:
+            input(type='text', name='title' placeholder="Title" )
+            label First Name:
+            input(type='text', name='authorfirstname' placeholder="First-Name" )
+            label Last Name:
+            input(type='text', name='authorlastname' placeholder="Last-Name" )
+            label Email:
+            input(type='email', name='authoremail' placeholder="Email" )
+            label Description:
+            input(type='text', name='description' placeholder="Description" )
+            label Blog:
+            textarea(rows='20' cols='60' name='body' placeholder="enter blog here:" class="blogInput")
+            input(type='submit', value='Submit' class="inputButtons")

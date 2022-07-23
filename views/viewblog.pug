@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content 
+    div.content 
+        div.viewBlog
+            h2.viewTitle=wantedBlog.title 
+            p.titleName=wantedBlog.authorfirstname + " " + wantedBlog.authorlastname + " | " + wantedBlog.authoremail
+            //- h1=`Description: ${wantedBlog.description}`
+            //- h1=`Authors Email: ${wantedBlog.authoremail}`
+            p.viewBlogs=wantedBlog.body
+            div.inputButtonContainer
+                form(action=`/article`, method='GET')
+                    input(type='submit', value='<-- BACK' class="inputViewEditBtn")
+                form(action=`/article/delete${wantedBlog.id}`, method='POST')
+                    input(type='submit', value='Delete' class="inputButtonsDelete")
+                form(action=`/article/editblog${wantedBlog.id}`, method='POST')
+                    input(type='submit', value='EDIT -->' class="inputViewEditBtn")
+
