@@ -7,8 +7,7 @@ block content
             div.allBlogs
                 h2.title= val.title
                 p.titleName= val.authorfirstname + " " + val.authorlastname + " | " + val.authoremail
-                //- h3.titleEmail= val.authoremail
-                h5.titleDescription= val.description
+                p.titleDescription= val.description
                 form(action=`/article/viewblog${val.id}`, method='GET')
                     input(type='submit', value='VIEW -->' class="inputViewBtn")
 

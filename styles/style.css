@@ -154,15 +154,17 @@ label {
 }
 
 .inputViewBtn {
-    width: 20%;
-    padding: 10px;
+    width: auto;
+    padding: 0px;
     background-color: transparent;
-    color: rgb(11, 11, 99);
+    color: rgb(37, 37, 209);
     border: none;
+    font-weight: 500;
 }
 
 .inputViewBtn:hover {
-    background-color: rgb(186, 186, 186)
+    color: rgb(13, 13, 66);
+
 }
 
 .inputButtonsMain {
@@ -219,12 +221,14 @@ label {
 }
 
 .inputViewEditBtn {
-    padding: 10px;
+    margin:10px;
+    padding:0px;
     background-color: transparent;
-    color: rgb(11, 11, 99);
+    color: rgb(37, 37, 209);
     border: none;
+    font-weight: 500;
 }
 
 .inputViewEditBtn:hover {
-    background-color: azure;
+    color: rgb(13, 13, 66);
 }
